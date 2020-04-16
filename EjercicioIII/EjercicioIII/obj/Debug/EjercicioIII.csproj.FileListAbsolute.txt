@@ -1,0 +1,7 @@
+C:\Users\yemin\source\repos\EjercicioIII\EjercicioIII\obj\Debug\EjercicioIII.csprojAssemblyReference.cache
+C:\Users\yemin\source\repos\EjercicioIII\EjercicioIII\obj\Debug\EjercicioIII.csproj.CoreCompileInputs.cache
+C:\Users\yemin\source\repos\EjercicioIII\EjercicioIII\bin\Debug\EjercicioIII.exe.config
+C:\Users\yemin\source\repos\EjercicioIII\EjercicioIII\bin\Debug\EjercicioIII.exe
+C:\Users\yemin\source\repos\EjercicioIII\EjercicioIII\bin\Debug\EjercicioIII.pdb
+C:\Users\yemin\source\repos\EjercicioIII\EjercicioIII\obj\Debug\EjercicioIII.exe
+C:\Users\yemin\source\repos\EjercicioIII\EjercicioIII\obj\Debug\EjercicioIII.pdb
