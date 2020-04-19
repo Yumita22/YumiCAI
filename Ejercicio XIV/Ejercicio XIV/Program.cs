@@ -41,16 +41,16 @@ namespace Ejercicio_XIV
             u = j.ToString();
             v = k.ToString();
 
-            Console.WriteLine("{0}*1={1}",l,m);
-            Console.WriteLine("{0}*2={1}", l, n);
-            Console.WriteLine("{0}*3={1}", l, o);
-            Console.WriteLine("{0}*4={1}", l, p);
-            Console.WriteLine("{0}*5={1}", l, q);
-            Console.WriteLine("{0}*6={1}", l, r);
-            Console.WriteLine("{0}*7={1}", l, s);
-            Console.WriteLine("{0}*8={1}", l, t);
-            Console.WriteLine("{0}*9={1}", l, u);
-            Console.WriteLine("{0}*10={1}", l, v);
+            Console.WriteLine("{0}x1={1}",l,m);
+            Console.WriteLine("{0}x2={1}", l, n);
+            Console.WriteLine("{0}x3={1}", l, o);
+            Console.WriteLine("{0}x4={1}", l, p);
+            Console.WriteLine("{0}x5={1}", l, q);
+            Console.WriteLine("{0}x6={1}", l, r);
+            Console.WriteLine("{0}x7={1}", l, s);
+            Console.WriteLine("{0}x8={1}", l, t);
+            Console.WriteLine("{0}x9={1}", l, u);
+            Console.WriteLine("{0}x10={1}", l, v);
 
             Console.ReadKey();
         }
