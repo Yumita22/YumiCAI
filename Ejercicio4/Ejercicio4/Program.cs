@@ -8,7 +8,8 @@ namespace Ejercicio4
 {
     public class Program
     {
-        public bool Main(string[] args)
+        public static bool Main ()
+
         {
 
             string str1; string str2;
@@ -30,8 +31,8 @@ namespace Ejercicio4
                 {
                     anagrama = true;
                 }
-            }    
-                return anagrama;
+            }
+            return anagrama;
 
 
 
