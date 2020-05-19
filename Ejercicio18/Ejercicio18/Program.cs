@@ -14,6 +14,7 @@ namespace Ejercicio18
             Console.WriteLine("Decimal a Binario{0} -> {1}", n, abinario(n));
             Console.WriteLine("Decimal a OCtal{0} -> {1}", n, aoctal(n));
             Console.WriteLine("Decimal a Hexadecimal{0} -> {1}", n, ahexa(n));
+            Console.ReadKey();
         }
 
         #region hexa
