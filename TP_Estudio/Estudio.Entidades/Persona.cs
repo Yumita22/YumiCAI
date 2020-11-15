@@ -17,15 +17,11 @@ namespace Estudio.Entidades
         private long _telefono;
         private string _mail;
 
-        public Persona(int Id, string Nombre, string Apellido, string Direccion, long Telefono, string Mail)
+        public Persona(string nombre, string apellido)
         {
-            this._id = Id;
-            this._nombre = Nombre;
-            this._apellido = Apellido;
-            this._direccion = Direccion;
-            this._telefono = Telefono;
-            this._mail = Mail;
-            
+            this.Nombre = nombre;
+            this.Apellido = apellido;
+                   
         }
 
         [DataMember]

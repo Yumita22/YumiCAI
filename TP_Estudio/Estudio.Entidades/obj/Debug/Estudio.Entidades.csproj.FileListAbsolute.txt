@@ -1,0 +1,6 @@
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Entidades\bin\Debug\Estudio.Entidades.dll
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Entidades\bin\Debug\Estudio.Entidades.pdb
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Entidades\obj\Debug\Estudio.Entidades.csprojAssemblyReference.cache
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Entidades\obj\Debug\Estudio.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Entidades\obj\Debug\Estudio.Entidades.dll
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Entidades\obj\Debug\Estudio.Entidades.pdb

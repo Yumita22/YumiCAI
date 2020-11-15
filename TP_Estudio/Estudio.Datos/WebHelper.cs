@@ -36,9 +36,6 @@ namespace Estudio.Datos
             return responseString;
         }
 
-
-
-
         public static string Post(string url, object objetoMap)
         {
             string uri = rutaBase + url;
@@ -48,9 +45,7 @@ namespace Estudio.Datos
             try
             {
                 var response = webClient.UploadValues(uri, parametros);
-
                 var responseString = Encoding.Default.GetString(response);
-
                 return responseString;
             }
             catch (Exception ex)

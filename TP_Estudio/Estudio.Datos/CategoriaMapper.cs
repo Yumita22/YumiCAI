@@ -15,7 +15,7 @@ namespace Estudio.Datos
         public TransactionResult Insert(Categoria categoriaNuevo)
         {
             NameValueCollection obj = ReverseMap(categoriaNuevo);
-            string ResultadoPost = WebHelper.Post("api/v1/Categorias", obj);
+            string ResultadoPost = WebHelper.Post("Categorias", obj);
             TransactionResult result = MapResultado(ResultadoPost);
             return result;
         }
@@ -38,7 +38,7 @@ namespace Estudio.Datos
 
         public List<Categoria> TraerTodos()
         {
-            string json = WebHelper.Get("api/v1/Categorias/" + ConfigurationManager.AppSettings["Legajo"]);
+            string json = WebHelper.Get("Categorias");
             List<Categoria> resultadomapeo = MapList(json);
             return resultadomapeo;
 

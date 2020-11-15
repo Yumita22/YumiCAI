@@ -34,15 +34,13 @@ namespace Estudio.Negocios
                 }
                 return empleadoIdEmpresa;
             }
-            public int InsertarEmpleado(int idEmpleado, int idEmpresa, int idCategoria, long cuil, DateTime fechaNacimiento, DateTime fechaAlta)
+            public int InsertarEmpleado(int idEmpresa, int idCategoria, long cuil, DateTime fechaNacimiento, string nombre, string apellido)
             {
-               Empleado empleado = new Empleado(idEmpleado,idEmpresa,idCategoria,cuil,fechaNacimiento,fechaAlta);
-                empleado.idEmpleado = idEmpleado;
+               Empleado empleado = new Empleado(nombre, apellido, cuil);
                 empleado.idEmpresa = idEmpresa;
                 empleado.idCategoria = idCategoria;
                 empleado.cuil = cuil;
                 empleado.fechaNacimiento = fechaNacimiento;
-                empleado.fechaAlta = fechaAlta;
                 empleado.activo = true;
                 TransactionResult resultante = mapper.Insert(empleado);
              

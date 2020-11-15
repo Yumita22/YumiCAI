@@ -15,7 +15,7 @@ namespace Estudio.Datos
         public TransactionResult Insert(Empleado empleadoNuevo)
         {
             NameValueCollection obj = ReverseMap(empleadoNuevo);
-            string ResultadoPost = WebHelper.Post("api/v1/Empleados", obj);
+            string ResultadoPost = WebHelper.Post("Empleados", obj);
             TransactionResult result = MapResultado(ResultadoPost);
             return result;
         }
@@ -41,7 +41,7 @@ namespace Estudio.Datos
 
         public List<Empleado> TraerTodos()
         {
-            string json = WebHelper.Get("api/v1/empleados/" + ConfigurationManager.AppSettings["Legajo"]);
+            string json = WebHelper.Get("empleados/" + ConfigurationManager.AppSettings["Legajo"]);
             List<Empleado>resultadomapeo = MapList(json);
             return resultadomapeo;
 

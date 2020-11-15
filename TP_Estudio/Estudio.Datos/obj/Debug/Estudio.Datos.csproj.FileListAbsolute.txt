@@ -1,0 +1,11 @@
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Datos\bin\Debug\Estudio.Datos.dll
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Datos\bin\Debug\Estudio.Datos.pdb
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Datos\bin\Debug\Estudio.Entidades.dll
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Datos\bin\Debug\Newtonsoft.Json.dll
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Datos\bin\Debug\Estudio.Entidades.pdb
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Datos\bin\Debug\Newtonsoft.Json.xml
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Datos\obj\Debug\Estudio.Datos.csprojAssemblyReference.cache
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Datos\obj\Debug\Estudio.Datos.csproj.CoreCompileInputs.cache
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Datos\obj\Debug\Estudio.Datos.csproj.CopyComplete
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Datos\obj\Debug\Estudio.Datos.dll
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Datos\obj\Debug\Estudio.Datos.pdb

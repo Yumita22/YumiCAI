@@ -1,0 +1,7 @@
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\TP_Estudio\bin\Debug\TP_Estudio.exe.config
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\TP_Estudio\bin\Debug\TP_Estudio.exe
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\TP_Estudio\bin\Debug\TP_Estudio.pdb
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\TP_Estudio\obj\Debug\TP_Estudio.csprojAssemblyReference.cache
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\TP_Estudio\obj\Debug\TP_Estudio.csproj.CoreCompileInputs.cache
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\TP_Estudio\obj\Debug\TP_Estudio.exe
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\TP_Estudio\obj\Debug\TP_Estudio.pdb
