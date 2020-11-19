@@ -15,9 +15,9 @@ namespace Estudio.Entidades
         private string _convenio;
         private double _sueldoBasico;
 
-        public Categoria(int id, string nombre, string convenio, double sueldoBasico)
+        public Categoria( string nombre, string convenio, double sueldoBasico)
         {
-            this._id = id;
+            //this._id = id;
             this._nombre = nombre;
             this._convenio = convenio;
             this._sueldoBasico = sueldoBasico;

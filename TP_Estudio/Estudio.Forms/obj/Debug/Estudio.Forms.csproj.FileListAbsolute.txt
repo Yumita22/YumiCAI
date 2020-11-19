@@ -18,3 +18,8 @@ C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Forms\bin\Debug\Estud
 C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Forms\bin\Debug\Estudio.Datos.pdb
 C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Forms\bin\Debug\Newtonsoft.Json.xml
 C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Forms\obj\Debug\Estudio.Forms.csproj.CopyComplete
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Forms\obj\Debug\Estudio.Forms.CategoriasAlta.resources
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Forms\obj\Debug\Estudio.Forms.EmpresasAlta.resources
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Forms\obj\Debug\Estudio.Forms.LiquidacionesAltas.resources
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Forms\obj\Debug\Estudio.Forms.ReporteEmpleados.resources
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Forms\obj\Debug\Estudio.Forms.ValidarLegajo.resources

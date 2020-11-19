@@ -21,14 +21,14 @@ namespace Estudio.Negocios
             return result;
         }
 
-        public int InsertarEmpresa(int idEmpresa, string razonSocial, long cuil, string domicilio, DateTime fechaAlta)
+        public int InsertarEmpresa(string razonSocial, long cuil, string domicilio)
         {
-            Empresa empresa = new Empresa(idEmpresa,razonSocial,cuil,domicilio,fechaAlta);
-            empresa.Id = idEmpresa;
+            Empresa empresa = new Empresa(razonSocial,cuil,domicilio);
+           // empresa.Id = idEmpresa;
             empresa.RazonSocial = razonSocial;
             empresa.Cuil = cuil;
             empresa.Domicilio = domicilio;
-            empresa.FechaAlta = fechaAlta;
+           // empresa.FechaAlta = fechaAlta;
             TransactionResult resultante = mapper.Insert(empresa);
 
             if (resultante.IsOk)

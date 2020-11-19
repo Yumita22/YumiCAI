@@ -21,15 +21,15 @@ namespace Estudio.Entidades
         private bool _activo;
 
          // public Persona(int Id, string Nombre, string Apellido, string Direccion, long Telefono, string Mail)
-        public Empleado(string nombre, string apellido, long cuil)
-            :base(nombre, apellido)
-        {
+        //public Empleado(string nombre, string apellido, long cuil)
+        //    :base(nombre, apellido)
+        //{
             
-            this.Nombre = nombre;
-            this.Apellido = apellido;
-            this.cuil = cuil;
+        //    this.Nombre = nombre;
+        //    this.Apellido = apellido;
+        //    this.cuil = cuil;
             
-        }
+        //}
 
         [DataMember]
         public int idEmpleado { get => _idEmpleado; set => _idEmpleado = value; }
@@ -44,7 +44,23 @@ namespace Estudio.Entidades
         public long cuil { get => _cuil; set => _cuil = value; }
 
         [DataMember]
-        public DateTime fechaNacimiento { get => _fechaNacimiento; set => _fechaNacimiento = value; }
+        public DateTime fechaNacimientoDateTime { get => _fechaNacimiento; set => _fechaNacimiento = value; }
+
+        public string fechaNacimiento
+        { 
+            set 
+            {
+                /* Intenta convertir el valor en fecha */
+                DateTime aux;
+                if (DateTime.TryParse(value, out aux)) 
+                {
+                    _fechaNacimiento = aux;
+                }
+            }
+            get {
+                return _fechaNacimiento.ToString();
+            }
+        }
 
         [DataMember]
         public DateTime fechaAlta { get => _fechaAlta; set => _fechaAlta = value; }

@@ -15,7 +15,7 @@ namespace Estudio.Datos
         public TransactionResult Insert(Categoria categoriaNuevo)
         {
             NameValueCollection obj = ReverseMap(categoriaNuevo);
-            string ResultadoPost = WebHelper.Post("Categorias", obj);
+            string ResultadoPost = WebHelper.Post("/api/v1/estudiocontable/Categoria", obj);
             TransactionResult result = MapResultado(ResultadoPost);
             return result;
         }
@@ -23,7 +23,7 @@ namespace Estudio.Datos
         private NameValueCollection ReverseMap(Categoria categoria)
         {
             NameValueCollection n = new NameValueCollection();
-            n.Add("ID", categoria.Id.ToString());
+           // n.Add("ID", categoria.Id.ToString());
             n.Add("Nombre", categoria.Nombre);
             n.Add("SueldoBasico", categoria.SueldoBasico.ToString());
             n.Add("Convenio", categoria.Convenio);
@@ -38,7 +38,7 @@ namespace Estudio.Datos
 
         public List<Categoria> TraerTodos()
         {
-            string json = WebHelper.Get("Categorias");
+            string json = WebHelper.Get("/api/v1/estudiocontable/categorias");
             List<Categoria> resultadomapeo = MapList(json);
             return resultadomapeo;
 

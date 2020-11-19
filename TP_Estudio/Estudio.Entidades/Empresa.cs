@@ -16,13 +16,13 @@ namespace Estudio.Entidades
         private string _domicilio;
         private DateTime _fechaAlta;
 
-        public Empresa(int id, string razonSocial, long cuil, string domicilio, DateTime fechaAlta)
+        public Empresa(string razonSocial, long cuil, string domicilio)
         {
-            this._id = id;
+            //this._id = id;
             this._razonSocial = razonSocial;
             this._cuil = cuil;
             this._domicilio = domicilio;
-            this._fechaAlta = fechaAlta;
+            //this._fechaAlta = fechaAlta;
         }
 
         [DataMember]

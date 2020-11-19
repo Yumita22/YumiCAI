@@ -15,7 +15,7 @@ namespace Estudio.Datos
         public TransactionResult Insert(Liquidaciones liquidacionNuevo)
         {
             NameValueCollection obj = ReverseMap(liquidacionNuevo);
-            string ResultadoPost = WebHelper.Post("api/v1/Liquidaciones", obj);
+            string ResultadoPost = WebHelper.Post("/api/v1/estudiocontable/Liquidacion", obj);
             TransactionResult result = MapResultado(ResultadoPost);
             return result;
         }
@@ -23,13 +23,13 @@ namespace Estudio.Datos
         private NameValueCollection ReverseMap(Liquidaciones liquidaciones)
         {
             NameValueCollection n = new NameValueCollection();
-            n.Add("Id", liquidaciones.Id.ToString());
+          //  n.Add("Id", liquidaciones.Id.ToString());
             n.Add("IdEmpleado", liquidaciones.IdEmpleado.ToString());
             n.Add("CodigoTransferencia", liquidaciones.CodigoTransferencia.ToString());
             n.Add("Periodo", liquidaciones.Periodo.ToString());
-            n.Add("Bruto", liquidaciones.FechaAlta.ToString());
+            n.Add("Bruto", liquidaciones.Bruto.ToString());
             n.Add("Descuentos", liquidaciones.Descuentos.ToString());
-            n.Add("FechaAlta", liquidaciones.FechaAlta.ToString());
+            n.Add("FechaAlta", "19/11/2020");
             return n;
         }
 

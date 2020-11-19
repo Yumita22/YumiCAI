@@ -12,21 +12,21 @@ namespace Estudio.Entidades
     {
         private int _id;
         private int _idEmpleado;
-        private int _codigoTransferencia;
+        private string _codigoTransferencia;
         private int _periodo;
         private double _bruto;
         private double _descuentos;
         private DateTime _fechaAlta;
 
-        public Liquidaciones(int id, int idEmpleado, int codigoTransferencia, int periodo, double bruto, double descuentos, DateTime fechaAlta)
+        public Liquidaciones(int idEmpleado, string codigoTransferencia, int periodo, double bruto, double descuentos)
         {
-            this._id = id;
+            //this._id = id;
             this._idEmpleado = idEmpleado;
             this._codigoTransferencia = codigoTransferencia;
             this._periodo = periodo;
             this._bruto = bruto;
             this._descuentos = descuentos;
-            this._fechaAlta = fechaAlta;
+            //this._fechaAlta = fechaAlta;
         }
 
         [DataMember]
@@ -34,7 +34,7 @@ namespace Estudio.Entidades
         [DataMember]
         public int IdEmpleado { get => _idEmpleado; set => _idEmpleado = value; }
         [DataMember]
-        public int CodigoTransferencia { get => _codigoTransferencia; set => _codigoTransferencia = value; }
+        public string CodigoTransferencia { get => _codigoTransferencia; set => _codigoTransferencia = value; }
         [DataMember]
         public int Periodo { get => _periodo; set => _periodo = value; }
         [DataMember]

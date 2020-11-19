@@ -33,16 +33,16 @@ namespace Estudio.Negocios
             }
             return LiquidacionCategoria;
         }
-        public int InsertLiquidacion(int id, int idEmpleado, int codigoTransferencia, int periodo, double bruto, double descuentos, DateTime fechaAlta)
+        public int InsertLiquidacion(int idEmpleado, string codigoTransferencia, int periodo, double bruto, double descuentos)
         {
-            Liquidaciones liquidaciones = new Liquidaciones(id,idEmpleado,codigoTransferencia,periodo,bruto,descuentos,fechaAlta);
-            liquidaciones.Id = id;
+            Liquidaciones liquidaciones = new Liquidaciones(idEmpleado,codigoTransferencia,periodo,bruto,descuentos);
+            //liquidaciones.Id = id;
             liquidaciones.IdEmpleado = idEmpleado;
             liquidaciones.CodigoTransferencia = codigoTransferencia;
             liquidaciones.Periodo = periodo;
             liquidaciones.Bruto = bruto;
             liquidaciones.Descuentos = descuentos;
-            liquidaciones.FechaAlta = fechaAlta;
+           // liquidaciones.FechaAlta = fechaAlta;
             TransactionResult resultante = mapper.Insert(liquidaciones);
 
             if (resultante.IsOk)

@@ -14,15 +14,19 @@ namespace Estudio.Forms
 {
     public partial class EmpleadosAlta : Form
     {
+       
+        private EmpleadoServicio _empleadoServicio;
         public EmpleadosAlta()
         {
             InitializeComponent();
             CargarEmpresas();
             CargarCategorias();
-           
+            _empleadoServicio = new EmpleadoServicio();
+
         }
 
-      void CargarEmpresas()
+        
+        public void CargarEmpresas()
         {
             try
             {
@@ -33,7 +37,7 @@ namespace Estudio.Forms
                 this.empresaCombo.DisplayMember = "RazonSocial";
                 this.empresaCombo.ValueMember = "Id";
             }
-            catch(Exception ex) 
+            catch (Exception ex)
             {
                 MessageBox.Show("Ha ocurrido un error al cargar las empresas");
                 this.Close();
@@ -58,5 +62,46 @@ namespace Estudio.Forms
             }
         }
 
+        private void botonVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            
+        }
+
+
+
+        private void InsertarEmpleado_Click(object sender, EventArgs e)
+        {
+          
+            try
+            {
+                string Nombre = this.nombretxt.Text;
+                string Apellido = this.apellidotxt.Text;
+                int idEmpresa = (int)this.empresaCombo.SelectedValue;
+                int idCategoria = (int)this.categoriaCombo.SelectedValue;
+                long Cuil;
+                if (!long.TryParse(this.cuilTxt.Text, out Cuil))
+                {
+                    throw new ArgumentException("El cuil debe ser numerico");
+                }
+                DateTime FechaNacimiento = this.fechanacPicker.Value;
+                
+                _empleadoServicio.InsertarEmpleado(idEmpresa, idCategoria, Cuil, FechaNacimiento, Nombre, Apellido);
+                MessageBox.Show("El empleado fue ingresado exitosamente");
+
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            catch (Exception ex2)
+            {
+                MessageBox.Show("Error del servidor");
+            }
+        }
+
+
     }
+
+
 }
