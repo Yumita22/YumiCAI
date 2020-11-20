@@ -13,7 +13,7 @@ namespace Estudio.Negocios
         private LiquidacionesMapper mapper;
         public LiquidacionesServicio()
         {
-            mapper = new LiquidacionesMapper ();
+            mapper = new LiquidacionesMapper();
         }
         public List<Liquidaciones> TraerLiquidaciones()
         {
@@ -35,14 +35,14 @@ namespace Estudio.Negocios
         }
         public int InsertLiquidacion(int idEmpleado, string codigoTransferencia, int periodo, double bruto, double descuentos)
         {
-            Liquidaciones liquidaciones = new Liquidaciones(idEmpleado,codigoTransferencia,periodo,bruto,descuentos);
-            //liquidaciones.Id = id;
+            Liquidaciones liquidaciones = new Liquidaciones(idEmpleado, codigoTransferencia, periodo, bruto, descuentos);
+
             liquidaciones.IdEmpleado = idEmpleado;
             liquidaciones.CodigoTransferencia = codigoTransferencia;
             liquidaciones.Periodo = periodo;
             liquidaciones.Bruto = bruto;
             liquidaciones.Descuentos = descuentos;
-           // liquidaciones.FechaAlta = fechaAlta;
+
             TransactionResult resultante = mapper.Insert(liquidaciones);
 
             if (resultante.IsOk)

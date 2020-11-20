@@ -127,6 +127,7 @@
             this.consultarLiquidaciónToolStripMenuItem.Name = "consultarLiquidaciónToolStripMenuItem";
             this.consultarLiquidaciónToolStripMenuItem.Size = new System.Drawing.Size(269, 30);
             this.consultarLiquidaciónToolStripMenuItem.Text = "Consultar Liquidación";
+            this.consultarLiquidaciónToolStripMenuItem.Click += new System.EventHandler(this.consultarLiquidaciónToolStripMenuItem_Click);
             // 
             // categoriasToolStripMenuItem
             // 
@@ -149,6 +150,7 @@
             this.consultarCategoriaToolStripMenuItem.Name = "consultarCategoriaToolStripMenuItem";
             this.consultarCategoriaToolStripMenuItem.Size = new System.Drawing.Size(254, 30);
             this.consultarCategoriaToolStripMenuItem.Text = "Consultar Categoria";
+            this.consultarCategoriaToolStripMenuItem.Click += new System.EventHandler(this.consultarCategoriaToolStripMenuItem_Click);
             // 
             // Inicio
             // 

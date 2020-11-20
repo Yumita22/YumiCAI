@@ -23,7 +23,7 @@ namespace Estudio.Datos
         private NameValueCollection ReverseMap(Empleado empleado)
         {
             NameValueCollection n = new NameValueCollection();
-            //   n.Add("id", empleado.idEmpleado.ToString());
+            
             n.Add("idCategoria", empleado.idCategoria.ToString());
             n.Add("idEmpresa", empleado.idEmpresa.ToString());
             n.Add("Cuil", empleado.cuil.ToString());
@@ -32,7 +32,6 @@ namespace Estudio.Datos
             n.Add("FechaNacimiento", empleado.fechaNacimiento.ToString());
             n.Add("FechaAlta","19/11/2020");
             n.Add("Usuario", ConfigurationManager.AppSettings["Legajo"]);
-            //n.Add("Activo", empleado.activo.ToString());
             return n;
         }
 
@@ -45,7 +44,7 @@ namespace Estudio.Datos
         public List<Empleado> TraerTodos()
         {
             string json = WebHelper.Get("/api/v1/estudiocontable/empleados/");
-                //+ ConfigurationManager.AppSettings["Legajo"])
+               
             List<Empleado>resultadomapeo = MapList(json);
             return resultadomapeo;
 

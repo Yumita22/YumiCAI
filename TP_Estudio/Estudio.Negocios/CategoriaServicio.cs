@@ -10,7 +10,7 @@ namespace Estudio.Negocios
 {
     public class CategoriaServicio
     {
-         
+
         private CategoriaMapper mapper;
         public CategoriaServicio()
         {
@@ -20,6 +20,19 @@ namespace Estudio.Negocios
         {
             List<Categoria> result = mapper.TraerTodos();
             return result;
+        }
+
+        public List<Categoria> GetCategoriasPorConvenio(string convenio)
+        {
+            List<Categoria> categorias = new List<Categoria>();
+            foreach (Categoria c in this.GetCategorias())
+            {
+                if (c.Convenio == convenio)
+                {
+                    categorias.Add(c);
+                }
+            }
+            return categorias;
         }
 
         public int InsertarCategoria( string nombre, string convenio, double sueldoBasico)

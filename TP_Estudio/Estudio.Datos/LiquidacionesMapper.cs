@@ -23,7 +23,7 @@ namespace Estudio.Datos
         private NameValueCollection ReverseMap(Liquidaciones liquidaciones)
         {
             NameValueCollection n = new NameValueCollection();
-          //  n.Add("Id", liquidaciones.Id.ToString());
+          
             n.Add("IdEmpleado", liquidaciones.IdEmpleado.ToString());
             n.Add("CodigoTransferencia", liquidaciones.CodigoTransferencia.ToString());
             n.Add("Periodo", liquidaciones.Periodo.ToString());
@@ -41,7 +41,7 @@ namespace Estudio.Datos
 
         public List<Liquidaciones> TraerTodos()
         {
-            string json = WebHelper.Get("api/v1/liquidaciones/" + ConfigurationManager.AppSettings["Legajo"]);
+            string json = WebHelper.Get("/api/v1/estudiocontable/liquidaciones/"); //+ ConfigurationManager.AppSettings["Legajo"]);
             List<Liquidaciones> resultadomapeo = MapList(json);
             return resultadomapeo;
 

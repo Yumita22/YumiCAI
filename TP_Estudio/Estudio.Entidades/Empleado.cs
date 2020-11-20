@@ -20,16 +20,6 @@ namespace Estudio.Entidades
         private DateTime _fechaAlta;
         private bool _activo;
 
-         // public Persona(int Id, string Nombre, string Apellido, string Direccion, long Telefono, string Mail)
-        //public Empleado(string nombre, string apellido, long cuil)
-        //    :base(nombre, apellido)
-        //{
-            
-        //    this.Nombre = nombre;
-        //    this.Apellido = apellido;
-        //    this.cuil = cuil;
-            
-        //}
 
         [DataMember]
         public int idEmpleado { get => _idEmpleado; set => _idEmpleado = value; }

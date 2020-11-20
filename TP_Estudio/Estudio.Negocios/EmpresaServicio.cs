@@ -24,11 +24,11 @@ namespace Estudio.Negocios
         public int InsertarEmpresa(string razonSocial, long cuil, string domicilio)
         {
             Empresa empresa = new Empresa(razonSocial,cuil,domicilio);
-           // empresa.Id = idEmpresa;
+           
             empresa.RazonSocial = razonSocial;
             empresa.Cuil = cuil;
             empresa.Domicilio = domicilio;
-           // empresa.FechaAlta = fechaAlta;
+          
             TransactionResult resultante = mapper.Insert(empresa);
 
             if (resultante.IsOk)

@@ -53,9 +53,24 @@ namespace Estudio.Forms
             reporteEmpleados.Show();
         }
 
+
+
         private void consultarEmpresaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ReporteEmpresas reporteEmpresas = new ReporteEmpresas();
+            reporteEmpresas.Show();
+        }
 
+        private void consultarCategoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteCategorias reporteCategorias = new ReporteCategorias();
+            reporteCategorias.Show();
+        }
+
+        private void consultarLiquidaciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteLiquidaciones reporteLiquidaciones = new ReporteLiquidaciones();
+            reporteLiquidaciones.Show();
         }
     }
 }

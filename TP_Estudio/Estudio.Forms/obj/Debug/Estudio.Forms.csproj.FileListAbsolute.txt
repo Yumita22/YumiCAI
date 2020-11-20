@@ -23,3 +23,6 @@ C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Forms\obj\Debug\Estud
 C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Forms\obj\Debug\Estudio.Forms.LiquidacionesAltas.resources
 C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Forms\obj\Debug\Estudio.Forms.ReporteEmpleados.resources
 C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Forms\obj\Debug\Estudio.Forms.ValidarLegajo.resources
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Forms\obj\Debug\Estudio.Forms.ReporteEmpresas.resources
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Forms\obj\Debug\Estudio.Forms.ReporteCategorias.resources
+C:\Users\yemin\Documents\GitHub\YumiCAI\TP_Estudio\Estudio.Forms\obj\Debug\Estudio.Forms.ReporteLiquidaciones.resources

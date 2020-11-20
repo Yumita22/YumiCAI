@@ -45,8 +45,9 @@ namespace Estudio.Forms
             }
             if (!int.TryParse(cuilBox.Text,out int cuil))
             {
-                MessageBox.Show("el cuil debe ser numerico");
+                MessageBox.Show("El cuil debe ser numerico");
             }
+
             try
             {
                 string RazonSocial = this.razonBox.Text;

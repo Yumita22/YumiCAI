@@ -26,7 +26,7 @@ namespace Estudio.Entidades
             this._periodo = periodo;
             this._bruto = bruto;
             this._descuentos = descuentos;
-            //this._fechaAlta = fechaAlta;
+           
         }
 
         [DataMember]

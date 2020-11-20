@@ -23,7 +23,7 @@ namespace Estudio.Datos
         private NameValueCollection ReverseMap(Empresa empresa)
         {
             NameValueCollection n = new NameValueCollection();
-           // n.Add("IdEmpresa", empresa.Id.ToString());
+          
             n.Add("RazonSocial", empresa.RazonSocial);
             n.Add("Cuil", empresa.Cuil.ToString());
             n.Add("Domicilio", empresa.Domicilio);
@@ -41,7 +41,7 @@ namespace Estudio.Datos
         public List<Empresa> TraerTodos()
         {
             string json = WebHelper.Get("/api/v1/estudiocontable/empresas/");
-            //+ ConfigurationManager.AppSettings["Legajo"]);
+            
             List<Empresa> resultadomapeo = MapList(json);
             return resultadomapeo;
 

@@ -23,7 +23,7 @@ namespace Estudio.Datos
         private NameValueCollection ReverseMap(Categoria categoria)
         {
             NameValueCollection n = new NameValueCollection();
-           // n.Add("ID", categoria.Id.ToString());
+         
             n.Add("Nombre", categoria.Nombre);
             n.Add("SueldoBasico", categoria.SueldoBasico.ToString());
             n.Add("Convenio", categoria.Convenio);

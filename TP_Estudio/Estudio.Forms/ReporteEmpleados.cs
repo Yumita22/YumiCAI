@@ -38,19 +38,43 @@ namespace Estudio.Forms
             }
         }
 
-        void CargarEmpleados()
+        private void empresasCombo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            try
+            if (empresasCombo.SelectedItem != null)
+           
             {
+                Empresa unaEmpresa = (Empresa)empresasCombo.SelectedItem;
+
                 EmpleadoServicio empleadoServicio = new EmpleadoServicio();
-                List<Empleado> listaempleados = empleadoServicio.TraerEmpleados();
-               // var source = new BindingSource(listaempleados, null);
-                dataGridView1.DataSource = listaempleados;
+                List<Empleado> listaempleados = empleadoServicio.TraerEmpleadosPorEmpresa(unaEmpresa.Id);
+
+                gridEmpleados.Visible = true;
+                gridEmpleados.DataSource = listaempleados;
+
+                
+                                              
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("No ha seleccionado ninguna empresa");
             }
+
+
+        }
+
+        private void gridEmpleados_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            this.gridEmpleados.Columns[0].Visible = false;
+            this.gridEmpleados.Columns[1].Visible = false;
+            this.gridEmpleados.Columns[2].Visible = false;
+            this.gridEmpleados.Columns[4].Visible = false;
+            this.gridEmpleados.Columns[5].Visible = false;
+            this.gridEmpleados.Columns[8].Visible = false;
+            this.gridEmpleados.Columns[11].Visible = false;
+            this.gridEmpleados.Columns[12].Visible = false;
+            this.gridEmpleados.Columns[13].Visible = false;
+            //this.gridEmpleados.Columns[14].Visible = false;
         }
     }
-}
+    }
+

@@ -18,11 +18,11 @@ namespace Estudio.Entidades
 
         public Empresa(string razonSocial, long cuil, string domicilio)
         {
-            //this._id = id;
+            
             this._razonSocial = razonSocial;
             this._cuil = cuil;
             this._domicilio = domicilio;
-            //this._fechaAlta = fechaAlta;
+            
         }
 
         [DataMember]
