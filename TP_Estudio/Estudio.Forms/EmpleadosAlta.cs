@@ -14,7 +14,7 @@ namespace Estudio.Forms
 {
     public partial class EmpleadosAlta : Form
     {
-       
+
         private EmpleadoServicio _empleadoServicio;
         public EmpleadosAlta()
         {
